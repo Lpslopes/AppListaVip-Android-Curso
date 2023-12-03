@@ -7,10 +7,10 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/txt_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Aplicativo Lista VIP Curso Android"
+        android:text="@string/txt_title"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -20,89 +20,107 @@
         app:layout_constraintVertical_bias="0.022" />
 
     <EditText
-        android:id="@+id/editTextText4"
+        android:id="@+id/edit_primeironome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:ems="10"
-        android:hint="Primeiro Nome"
+        android:hint="@string/txt_hint_edit_primeiro_nome"
+        android:importantForAutofill="no"
         android:inputType="text"
-        android:text="Name"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:minHeight="48dp"
+        android:textColorHint="#8D6E63"
+        app:layout_constraintTop_toBottomOf="@+id/txt_title"
+        tools:ignore="HardcodedText"
         tools:layout_editor_absoluteX="108dp" />
 
     <EditText
-        android:id="@+id/editTextText5"
+        android:id="@+id/editsobrenome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:ems="10"
-        android:hint="Sobrenome"
+        android:hint="@string/txt_hint_edit_sobrenome"
+        android:importantForAutofill="no"
         android:inputType="text"
-        android:text="Name"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText4"
+        android:minHeight="48dp"
+        android:textColorHint="#8D6E63"
+        app:layout_constraintTop_toBottomOf="@+id/edit_primeironome"
+        tools:ignore="HardcodedText"
         tools:layout_editor_absoluteX="76dp" />
 
     <EditText
-        android:id="@+id/editTextText6"
+        android:id="@+id/editcursodesejado"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:ems="10"
+        android:hint="@string/txt_hint_edit_cursodesejado"
+        android:importantForAutofill="no"
         android:inputType="text"
-        android:text="Name"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText5"
+        android:minHeight="48dp"
+        android:textColorHint="#8D6E63"
+        app:layout_constraintTop_toBottomOf="@+id/editsobrenome"
         tools:layout_editor_absoluteX="78dp" />
 
+
     <EditText
-        android:id="@+id/editTextText7"
+        android:id="@+id/edit_telefonedecontato"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:ems="10"
-        android:hint="Nome do Curso Desejado"
+        android:hint="@string/txt_hint_edit_telefonedecontato"
+        android:importantForAutofill="no"
         android:inputType="text"
-        android:text="Name"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText6"
-        tools:layout_editor_absoluteX="83dp" />
+        android:minHeight="48dp"
+        android:textColorHint="#8D6E63"
+        app:layout_constraintTop_toBottomOf="@+id/editcursodesejado"
+        tools:ignore="HardcodedText"
+        tools:layout_editor_absoluteX="16dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_limpar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="48dp"
         android:backgroundTint="@color/cor_botao"
-        android:text="LIMPAR"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
+        android:text="@string/txt_button_limpar"
+        android:textColor="#212121"
+        app:layout_constraintBottom_toTopOf="@+id/btn_finalizar"
+        app:layout_constraintEnd_toStartOf="@+id/btn_salvar"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText7" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_telefonedecontato"
+        tools:ignore="HardcodedText" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_salvar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="48dp"
         android:backgroundTint="@color/cor_botao"
-        android:text="SALVAR"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
+        android:text="@string/txt_button_salvar"
+        android:textColor="#212121"
+        app:layout_constraintBottom_toTopOf="@+id/btn_finalizar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText7" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_telefonedecontato" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btn_finalizar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:layout_marginBottom="220dp"
         android:backgroundTint="@color/cor_botao"
-        android:text="FINALIZAR"
+        android:text="@string/txt_button_finalizar"
+        android:textColor="#212121"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText7" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_telefonedecontato" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
