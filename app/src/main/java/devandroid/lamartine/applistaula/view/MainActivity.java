@@ -1,8 +1,10 @@
-package devandroid.lamartine.applistaula;
+package devandroid.lamartine.applistaula.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import devandroid.lamartine.applistaula.R;
 
 public class MainActivity extends AppCompatActivity {
 
