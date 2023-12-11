@@ -6,8 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".view.MainActivity">
 
-    <TextView
-        android:id="@+id/txt_title"
+    <TextView android:id="@+id/txt_Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/txt_title"
@@ -19,8 +18,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.022" />
 
-    <EditText
-        android:id="@+id/edit_primeironome"
+    <EditText android:id="@+id/edit_PrimeiroNome"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
@@ -34,11 +32,10 @@
         android:textColorHint="#8D6E63"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_title"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Title"
         tools:ignore="HardcodedText" />
 
-    <EditText
-        android:id="@+id/editsobrenome"
+    <EditText android:id="@+id/editSobreNome"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
@@ -52,11 +49,10 @@
         android:textColorHint="#8D6E63"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_primeironome"
+        app:layout_constraintTop_toBottomOf="@+id/edit_PrimeiroNome"
         tools:ignore="HardcodedText" />
 
-    <EditText
-        android:id="@+id/editcursodesejado"
+    <EditText android:id="@+id/editCursoDesejado"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
@@ -70,11 +66,10 @@
         android:textColorHint="#8D6E63"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editsobrenome" />
+        app:layout_constraintTop_toBottomOf="@+id/editSobreNome" />
 
 
-    <EditText
-        android:id="@+id/edit_telefonedecontato"
+    <EditText android:id="@+id/edit_TelefonedeContato"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
@@ -88,11 +83,10 @@
         android:textColorHint="#8D6E63"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editcursodesejado"
+        app:layout_constraintTop_toBottomOf="@+id/editCursoDesejado"
         tools:ignore="HardcodedText" />
 
-    <Button
-        android:id="@+id/btn_limpar"
+    <Button android:id="@+id/btn_Limpar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -100,15 +94,14 @@
         android:backgroundTint="@color/cor_botao"
         android:text="@string/txt_button_limpar"
         android:textColor="#212121"
-        app:layout_constraintBottom_toTopOf="@+id/btn_finalizar"
-        app:layout_constraintEnd_toStartOf="@+id/btn_salvar"
+        app:layout_constraintBottom_toTopOf="@+id/btn_Finalizar"
+        app:layout_constraintEnd_toStartOf="@+id/btn_Salvar"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_telefonedecontato"
+        app:layout_constraintTop_toBottomOf="@+id/edit_TelefonedeContato"
         tools:ignore="HardcodedText" />
 
-    <Button
-        android:id="@+id/btn_salvar"
+    <Button android:id="@+id/btn_Salvar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
@@ -116,12 +109,11 @@
         android:backgroundTint="@color/cor_botao"
         android:text="@string/txt_button_salvar"
         android:textColor="#212121"
-        app:layout_constraintBottom_toTopOf="@+id/btn_finalizar"
+        app:layout_constraintBottom_toTopOf="@+id/btn_Finalizar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_telefonedecontato" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_TelefonedeContato" />
 
-    <Button
-        android:id="@+id/btn_finalizar"
+    <Button android:id="@+id/btn_Finalizar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
@@ -132,7 +124,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_telefonedecontato" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_TelefonedeContato" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
